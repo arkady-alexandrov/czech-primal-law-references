@@ -1,0 +1,90 @@
+pattern;scope;example;resolve_mode;resolve_value
+(?i)Insolvenční zákon\.$;full;FALSE;value;182/2006
+(?i)Obchodní zákoník\.$;full;FALSE;value;513/1991
+(?i)Zákon o rodině\.$;full;FALSE;value;94/1963
+(?i)Občanský soudní řád( č\. 99/1963 Sb\.)?(, ve znění pozdějších předpisů)?\.$;full;FALSE;value;99/1963
+(?i)Občanský zákoník( č\. 40\/1964 Sb\.)?(, ve znění pozdějších předpisů \(úplné znění č\. 70\/1983 Sb\.\))?\.$;full;FALSE;value;89/2012
+(?i)Soudní řád správní\.$;full;FALSE;value;150/2002
+(?i)Správní řád\.$;full;FALSE;value;500/2004
+(?i)Trestní řád\.$;full;FALSE;value;141/1961
+(?i)Trestní zákon\.$;full;FALSE;value;140/1961
+(?i)Trestní zákoník\.$;full;FALSE;value;40/2009
+(?i)Zákon o nemocenském pojištění\.$;full;FALSE;value;187/2006
+(?i)Zákon o ochraně hospodářské soutěže\.$;full;FALSE;value;143/2001
+(?i)Zákon o správních poplatcích\.$;full;FALSE;value;634/2004
+(?i)Zákon o soudních tlumočnících a soudních překladatelích\.$;full;FALSE;value;36/1967
+(?i)Zákon o vysokých školách\.$;full;FALSE;value;111/1998
+(?i)Zákoník práce\.$;full;FALSE;value;262/2006
+(?i)Školský zákon\.$;full;FALSE;value;561/2004
+(?i)Živnostenský zákon\.$;full;FALSE;value;455/1991
+(?i)(Např\. |Například )branný zákon.$;full;TRUE;value;585/2004
+(?i)(Např\. |Například )obchodní zákoník(, ve znění pozdějších předpisů)?\.$;full;TRUE;value;513/1991
+(?i)(Např\. |Například )občanský zákoník\.$;full;TRUE;value;89/2012
+(?i)(Např\. |Například )stavební zákon\.$;full;TRUE;value;283/2021
+(?i)(Např\. |Například )trestní řád\.$;full;TRUE;value;141/1961
+(?i)(Např\. |Například )živnostenský zákon\.$;full;TRUE;value;455/1991
+(?i)\d{1,3}/\d{4} Sb\..*$;full;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)Zákon č. ?\d{1,3}/\d{4}( Sb\.)?.*$;full;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)zákonem č. ?\d{1,3}/\d{4}( Sb\.)?.*$;full;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)zákonů č. ?\d{1,3}/\d{4}( Sb\.)?.*$;full;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)zákonu č. ?\d{1,3}/\d{4}( Sb\.)?.*$;full;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)Hlava .* trestního řádu\.$;part;FALSE;value;141/1961
+(?i)Hlava .* zákoníku práce\.$;part;FALSE;value;262/2006
+(?i)Hlava .*(části .*)? občanského soudního řádu\.$;part;FALSE;value;99/1963
+(?i)Část .* správního řádu\.$;part;FALSE;value;500/2004
+(?i)Část .* obchodního zákoníku\.$;part;FALSE;value;513/1991
+(?i)Část .* občanského soudního řádu\.$;part;FALSE;value;99/1963
+(?i)Část .* zákoníku práce(, ve znění pozdějších předpisů)?\.$;part;FALSE;value;262/2006
+(?i)(Např\. |Například )část .* zákoníku práce\.$;part;TRUE;value;262/2006
+(?i)Zákona č. ?\d{1,3}/\d{4}( Sb\.)?.*$;part;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)Zákona České národní rady č. ?\d{1,3}/\d{4}( Sb\.)?.*$;part;FALSE;pattern;\d{1,3}\/\d{4}
+(?i)§ \d+.*správního řádu\.$;para;FALSE;value;500/2004
+(?i)§ \d+.*služebního zákona\.$;para;FALSE;value;234/2014
+(?i)§ \d+.*občanského zákoníku( č\. 40/1964 Sb\.)?(, ve znění pozdějších předpisů)?\.$;para;FALSE;value;89/2012
+(?i)§ \d+.*občanského soudního řádu(, ve znění (pozdějších předpisů|zákona č\. 30\/2000 .*)| č. 99/1963 Sb)?\.$;para;FALSE;value;99/1963
+(?i)(?!.*vyhlášky)§ \d+.*stavebního zákona\.$;para;FALSE;value;283/2021
+(?i)(?!.* 65\/1965 )§ \d+.*zákoníku práce(, ve znění (pozdějších předpisů|zákona č\. (153\/1969 |362\/2007 ).*))?\.$;para;FALSE;value;262/2006
+(?i)§ \d+.*trestního řádu(, ve znění (pozdějších předpisů|zákona č\. 265\/2001 .*))?\.$;para;FALSE;value;141/1961
+(?i)§ \d+.*zákona o léčivech\.$;para;FALSE;value;378/2007
+(?i)(?!.* 513\/1991 )§ \d+.*obchodního zákoníku(, ve znění (pozdějších předpisů|zákona č\. 85\/2004 .*))?\.$;para;FALSE;value;513/1991
+(?i)§ \d+.*školského zákona(, ve znění pozdějších předpisů)?\.$;para;FALSE;value;561/2004
+(?i)§ \d+.*zákona o ověřování\.$;para;FALSE;value;21/2006
+(?i)§ \d+.*trestního zákoníku\.$;para;FALSE;value;40/2009
+(?i)§ \d+.*trestního zákona\.$;para;FALSE;value;140/1961
+(?i)§ \d+.*insolvenčního zákona\.$;para;FALSE;value;182/2006
+(?i)§ \d+.*zákona o zdravotních službách\.$;para;FALSE;value;372/2011
+(?i)§ \d+.*zákona o sociálních službách\.$;para;FALSE;value;108/2006
+(?i)§ \d+.*zákona o zaměstnanosti\.$;para;FALSE;value;435/2004
+(?i)§ \d+.*puncovního zákona\.$;para;FALSE;value;539/1992
+(?i)§ \d+.*branného zákona\.$;para;FALSE;value;585/2004
+(?i)§ \d+.*horního zákona\.$;para;FALSE;value;44/1988
+(?i)§ \d+.*zákona o obchodních korporacích\.$;para;FALSE;value;90/2012
+(?i)§ \d+.*rozpočtových pravidel\.$;para;FALSE;value;218/2000
+(?i)§ \d+.*zákona o podnikání na kapitálovém trhu\.$;para;FALSE;value;256/2004
+(?i)§ \d+.*zákona o sociálním zabezpečení\.$;para;FALSE;value;100/1988
+(?i)§ \d+.*o zajištění dalších podmínek bezpečnosti a ochrany zdraví při práci\.$;para;FALSE;value;309/2006
+(?i)(?!.* 215\/2004 )§ \d+.*o podpoře výzkumu( a vývoje|, experimentálního vývoje a inovací)(, ve znění pozdějších předpisů)?\.$;para;FALSE;value;130/2002
+(?i)§ \d+.*autorského zákona\.$;para;FALSE;value;121/2000
+(?i)§ \d+.*soudního řádu správního\.$;para;FALSE;value;150/2002
+(?i)§ \d+.*zákona o rodině\.$;para;FALSE;value;94/1963
+(?i)§ \d+.*živnostenského zákona\.$;para;FALSE;value;455/1991
+(?i)§ \d+.*hospodářského zákoníku( č\. 109\/1964 Sb\.)?(, ve znění pozdějších předpisů)?( \(úplné znění vyhlášeno pod č\. 80\/1989 Sb\.\))?\.$;para;FALSE;value;109/1964
+(?i)§ \d+.*zákona o národních výborech\.$;para;FALSE;value;69/1967
+(?i)§ \d+.*zákona o soudech a soudcích\.$;para;FALSE;value;6/2002
+(?i)§ \d+.*zákona o nemocenském pojištění\.$;para;FALSE;value;187/2006
+(?i)§ \d+.*zákona o vysokých školách\.$;para;FALSE;value;111/1998
+(?i)Čl. \d+.*Listiny základních práv a svobod.*$;para;FALSE;value;2/1993
+(?i)Čl\. \d+.*Ústavy( České republiky)?\.$;para;FALSE;value;1/1993
+(?i)(Např\. |Například )§ .*obchodního zákoníku(, ve znění pozdějších předpisů)?\.$;para;TRUE;value;513/1991
+(?i)(Např\. |Například )§ .*zákoníku práce(, ve znění (pozdějších předpisů|zákona č\. 153\/1969 .*))?\.$;para;TRUE;value;262/2006
+(?i)(Např\. |Například )§ .*občanského zákoníku(, ve znění pozdějších předpisů)?\.$;para;TRUE;value;89/2012
+(?i)(Např\. |Například )§ .*občanského soudního řádu(, ve znění zákona č\. 519\/1991 .*)?\.$;para;TRUE;value;99/1963
+(?i)(Např\. |Například )§ .*trestního řádu(, ve znění zákona č\. 178\/1990 .*)?\.$;para;TRUE;value;141/1961
+(?i)(Např\. |Například )§ .*správního řádu\.$;para;TRUE;value;500/2004
+(?i)(Např\. |Například )§ .*zákona o Ústavním soudu\.$;para;TRUE;value;182/1993
+(?i)(Např\. |Například )§ .*o sociálních službách\.$;para;TRUE;value;108/2006
+(?i)(Např\. |Například )§ .*trestního zákona\.$;para;TRUE;value;140/1961
+(?i)(Např\. |Například )§ .*trestního zákoníku\.$;para;TRUE;value;40/2009
+(?i)(Např\. |Například )§ .*služebního zákona\.$;para;TRUE;value;234/2014
+(?i)(Např\. |Například )§ .*stavebního zákona\.$;para;TRUE;value;283/2021
+(?i)(Např\. |Například )§ .*zákona o soudnictví ve věcech mládeže\.$;para;TRUE;value;218/2003
