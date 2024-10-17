@@ -1,2 +1,2 @@
-# 781d
-Primary legislation network analysis
+# Primary legislation network analysis
+# Síťová analýza primárních předpisů
